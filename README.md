@@ -2,8 +2,6 @@
 
 **Amazon ML Challenge 2026 · Team EEE_2027_ML · BITS Pilani, Hyderabad Campus**
 
-Tanishi Sinha (team lead), Palak Agarwal, Nysa Pahari, and Roshni Dhar
-
 We built a record-linkage pipeline that identifies the same business across three independent sources. The selected model scored **0.94548 macro F₀.₅** on a fresh local audit of 3,000 businesses. On the original audit cohort, the project improved from **0.87115 to 0.93874**, a gain of **6.76 percentage points**. The pipeline generated validated output for all **1,732,544** Source 1 test businesses.
 
 ## Problem statement
