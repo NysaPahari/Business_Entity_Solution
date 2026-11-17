@@ -1,0 +1,12 @@
+{
+  "selected_stage": "composite_k64_enhanced_more_training_rescore_k128",
+  "selection_macro_f05": 0.950000063359238,
+  "audit_macro_f05": 0.9387350407191304,
+  "target": 0.99,
+  "target_reached_on_audit": false,
+  "test_predictions_regenerated": true,
+  "criterion": "Highest threshold-tuning calibration macro F0.5; audit not used for selection",
+  "matching_results_path": "output_improved/matching_results.tsv",
+  "fresh_audit_macro_f05": 0.9454798696591747,
+  "target_reached_on_fresh_audit": false
+}

@@ -1,0 +1,27 @@
+{
+  "entities": 300,
+  "protocol": "Deterministic 300-entity calibration screen. Frozen model/cutoff. Same composite keys and max_df4096. No audit access; not a generalization estimate.",
+  "results": {
+    "128": {
+      "recovered_true_pairs": 1007,
+      "true_pairs": 1069,
+      "recall": 0.9420018709073901,
+      "oracle_macro_f05": 0.9777855512959878,
+      "frozen_model_macro_f05": 0.9331401946247556
+    },
+    "256": {
+      "recovered_true_pairs": 1012,
+      "true_pairs": 1069,
+      "recall": 0.9466791393826005,
+      "oracle_macro_f05": 0.9798543852398217,
+      "frozen_model_macro_f05": 0.9334874168469779
+    },
+    "512": {
+      "recovered_true_pairs": 1016,
+      "true_pairs": 1069,
+      "recall": 0.950420954162769,
+      "oracle_macro_f05": 0.9806993042097406,
+      "frozen_model_macro_f05": 0.9338705753551363
+    }
+  }
+}

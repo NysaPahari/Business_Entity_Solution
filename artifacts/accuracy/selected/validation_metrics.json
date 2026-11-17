@@ -1,0 +1,245 @@
+{
+  "thresholds": {
+    "global": 0.6424946130359818
+  },
+  "isotonic": false,
+  "rules": false,
+  "calibration": {
+    "cohort": "calibration",
+    "segments": [
+      {
+        "dimension": "all",
+        "segment": "all",
+        "entities": 3000,
+        "fp": 168,
+        "fn": 1216,
+        "tp": 9380,
+        "blocked_fn": 550,
+        "macro_f05": 0.9455508742950172
+      },
+      {
+        "dimension": "candidate_count",
+        "segment": "many",
+        "entities": 3000,
+        "fp": 168,
+        "fn": 1216,
+        "tp": 9380,
+        "blocked_fn": 550,
+        "macro_f05": 0.9455508742950172
+      },
+      {
+        "dimension": "country",
+        "segment": "India",
+        "entities": 1184,
+        "fp": 75,
+        "fn": 628,
+        "tp": 3574,
+        "blocked_fn": 353,
+        "macro_f05": 0.9284895455048598
+      },
+      {
+        "dimension": "country",
+        "segment": "US",
+        "entities": 1816,
+        "fp": 93,
+        "fn": 588,
+        "tp": 5806,
+        "blocked_fn": 197,
+        "macro_f05": 0.9566745600260406
+      },
+      {
+        "dimension": "cross",
+        "segment": "India|many|real_match",
+        "entities": 1124,
+        "fp": 72,
+        "fn": 628,
+        "tp": 3574,
+        "blocked_fn": 353,
+        "macro_f05": 0.9273413006029838
+      },
+      {
+        "dimension": "cross",
+        "segment": "India|many|singleton",
+        "entities": 60,
+        "fp": 3,
+        "fn": 0,
+        "tp": 0,
+        "blocked_fn": 0,
+        "macro_f05": 0.95
+      },
+      {
+        "dimension": "cross",
+        "segment": "US|many|real_match",
+        "entities": 1736,
+        "fp": 84,
+        "fn": 588,
+        "tp": 5806,
+        "blocked_fn": 197,
+        "macro_f05": 0.9592862909028165
+      },
+      {
+        "dimension": "cross",
+        "segment": "US|many|singleton",
+        "entities": 80,
+        "fp": 9,
+        "fn": 0,
+        "tp": 0,
+        "blocked_fn": 0,
+        "macro_f05": 0.9
+      },
+      {
+        "dimension": "truth_type",
+        "segment": "real_match",
+        "entities": 2860,
+        "fp": 156,
+        "fn": 1216,
+        "tp": 9380,
+        "blocked_fn": 550,
+        "macro_f05": 0.9467316863234445
+      },
+      {
+        "dimension": "truth_type",
+        "segment": "singleton",
+        "entities": 140,
+        "fp": 12,
+        "fn": 0,
+        "tp": 0,
+        "blocked_fn": 0,
+        "macro_f05": 0.9214285714285714
+      }
+    ],
+    "blocking": {
+      "true_pairs": 10596,
+      "recovered_pairs": 10046,
+      "pair_recall": 0.9480936202340506,
+      "oracle_macro_f05": 0.9804823521115226,
+      "mean_candidates": 127.98733333333334
+    },
+    "blocking_bottleneck": true
+  },
+  "audit": {
+    "cohort": "audit",
+    "segments": [
+      {
+        "dimension": "all",
+        "segment": "all",
+        "entities": 3000,
+        "fp": 176,
+        "fn": 1171,
+        "tp": 9066,
+        "blocked_fn": 576,
+        "macro_f05": 0.9387350407191304
+      },
+      {
+        "dimension": "candidate_count",
+        "segment": "many",
+        "entities": 3000,
+        "fp": 176,
+        "fn": 1171,
+        "tp": 9066,
+        "blocked_fn": 576,
+        "macro_f05": 0.9387350407191304
+      },
+      {
+        "dimension": "country",
+        "segment": "India",
+        "entities": 1191,
+        "fp": 84,
+        "fn": 621,
+        "tp": 3553,
+        "blocked_fn": 367,
+        "macro_f05": 0.9186085848897931
+      },
+      {
+        "dimension": "country",
+        "segment": "US",
+        "entities": 1809,
+        "fp": 92,
+        "fn": 550,
+        "tp": 5513,
+        "blocked_fn": 209,
+        "macro_f05": 0.9519857919036143
+      },
+      {
+        "dimension": "cross",
+        "segment": "India|many|real_match",
+        "entities": 1121,
+        "fp": 74,
+        "fn": 621,
+        "tp": 3553,
+        "blocked_fn": 367,
+        "macro_f05": 0.9215547052664966
+      },
+      {
+        "dimension": "cross",
+        "segment": "India|many|singleton",
+        "entities": 70,
+        "fp": 10,
+        "fn": 0,
+        "tp": 0,
+        "blocked_fn": 0,
+        "macro_f05": 0.8714285714285714
+      },
+      {
+        "dimension": "cross",
+        "segment": "US|many|real_match",
+        "entities": 1711,
+        "fp": 81,
+        "fn": 550,
+        "tp": 5513,
+        "blocked_fn": 209,
+        "macro_f05": 0.9550802440407002
+      },
+      {
+        "dimension": "cross",
+        "segment": "US|many|singleton",
+        "entities": 98,
+        "fp": 11,
+        "fn": 0,
+        "tp": 0,
+        "blocked_fn": 0,
+        "macro_f05": 0.8979591836734694
+      },
+      {
+        "dimension": "truth_type",
+        "segment": "real_match",
+        "entities": 2832,
+        "fp": 155,
+        "fn": 1171,
+        "tp": 9066,
+        "blocked_fn": 576,
+        "macro_f05": 0.941809718275915
+      },
+      {
+        "dimension": "truth_type",
+        "segment": "singleton",
+        "entities": 168,
+        "fp": 21,
+        "fn": 0,
+        "tp": 0,
+        "blocked_fn": 0,
+        "macro_f05": 0.8869047619047619
+      }
+    ],
+    "blocking": {
+      "true_pairs": 10237,
+      "recovered_pairs": 9661,
+      "pair_recall": 0.9437335156784215,
+      "oracle_macro_f05": 0.9799185598040107,
+      "mean_candidates": 127.94566666666667
+    },
+    "blocking_bottleneck": true
+  },
+  "selection_macro_f05": 0.950000063359238,
+  "threshold_tune_brier": 0.0014770159167660183,
+  "audit_brier": 0.0014247451825899471,
+  "forced_accept_pairs": 0,
+  "forced_reject_pairs": 0,
+  "strategy": "composite",
+  "top_k": 128,
+  "max_df": 4096,
+  "pool_size": 128,
+  "enhanced": true,
+  "frozen_classifier_from": "composite_k64_enhanced_more_training",
+  "experiment": "Frozen classifier; validation-only larger final candidate set and retuned calibration cutoff."
+}

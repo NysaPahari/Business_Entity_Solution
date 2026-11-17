@@ -1,0 +1,67 @@
+{
+  "seed": 2026,
+  "top_k": 20,
+  "feature_importance_gain": {
+    "address_token_set": 1115635.6256529093,
+    "name_tfidf": 116229.20898962021,
+    "numeric_jaccard": 106502.61014354229,
+    "retrieval_score": 75055.93189382553,
+    "address_tfidf": 73960.19970190525,
+    "name_token_sort": 59447.03870201111,
+    "name_jaccard": 46306.963593006134,
+    "address_token_sort": 41425.41303253174,
+    "address_jaccard": 39240.960080862045,
+    "name_levenshtein": 33316.37105792761,
+    "name_token_set": 27324.519724845886,
+    "address_length_similarity": 23924.16302895546,
+    "numeric_conflict": 14268.13982284069,
+    "name_length_similarity": 13046.859261870384,
+    "address_levenshtein": 10231.662211060524,
+    "address_exact": 36.50022077560425,
+    "country_equal": 35.174309849739075,
+    "name_exact": 0.0,
+    "name_both_present": 0.0,
+    "address_both_present": 0.0,
+    "country_both_present": 0.0
+  },
+  "train_positive_pairs": 34085,
+  "train_pairs": 211544,
+  "split_protocol": "hash buckets: 80% train, 10% calibration, 10% untouched audit; deterministic capped samples",
+  "calibration": {
+    "entities": 3000,
+    "singletons": 140,
+    "macro_f05": 0.8812304217317201,
+    "blocking": {
+      "true_pairs": 10596,
+      "recovered_pairs": 8728,
+      "pair_recall": 0.8237070592676482,
+      "oracle_macro_f05": 0.9201030359288085,
+      "mean_candidates": 17.564333333333334
+    }
+  },
+  "audit": {
+    "entities": 3000,
+    "singletons": 168,
+    "macro_f05": 0.8711496857429475,
+    "blocking": {
+      "true_pairs": 10237,
+      "recovered_pairs": 8285,
+      "pair_recall": 0.8093191364657615,
+      "oracle_macro_f05": 0.9143000305297078,
+      "mean_candidates": 17.733666666666668
+    }
+  },
+  "train": {
+    "entities": 12000,
+    "singletons": 734,
+    "macro_f05": 0.8860354936134016,
+    "blocking": {
+      "true_pairs": 41601,
+      "recovered_pairs": 34085,
+      "pair_recall": 0.8193312660753347,
+      "oracle_macro_f05": 0.9200196538508477,
+      "mean_candidates": 17.628666666666668
+    }
+  },
+  "threshold": 0.6212042554916716
+}

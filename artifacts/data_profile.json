@@ -1,0 +1,141 @@
+{
+  "train": [
+    {
+      "source": 1,
+      "country": "India",
+      "records": 883188,
+      "missing_names": 0,
+      "missing_addresses": 0,
+      "mean_name_length": 27.572323219971285,
+      "mean_address_length": 72.5841836619157
+    },
+    {
+      "source": 1,
+      "country": "US",
+      "records": 1323633,
+      "missing_names": 0,
+      "missing_addresses": 0,
+      "mean_name_length": 24.04362689657934,
+      "mean_address_length": 32.903820016575594
+    },
+    {
+      "source": 2,
+      "country": "India",
+      "records": 2017799,
+      "missing_names": 0,
+      "missing_addresses": 57846,
+      "mean_name_length": 28.806176928425476,
+      "mean_address_length": 63.96753492295318
+    },
+    {
+      "source": 2,
+      "country": "US",
+      "records": 3016817,
+      "missing_names": 0,
+      "missing_addresses": 111121,
+      "mean_name_length": 24.68269006704749,
+      "mean_address_length": 29.98727765058338
+    },
+    {
+      "source": 3,
+      "country": "India",
+      "records": 2115547,
+      "missing_names": 0,
+      "missing_addresses": 64948,
+      "mean_name_length": 28.156644120882213,
+      "mean_address_length": 55.141783661625105
+    },
+    {
+      "source": 3,
+      "country": "US",
+      "records": 3170056,
+      "missing_names": 0,
+      "missing_addresses": 110968,
+      "mean_name_length": 25.07970048478639,
+      "mean_address_length": 36.72603070734397
+    }
+  ],
+  "test": [
+    {
+      "source": 1,
+      "country": "France",
+      "records": 259452,
+      "missing_names": 0,
+      "missing_addresses": 0,
+      "mean_name_length": 19.37954997456177,
+      "mean_address_length": 47.97117000447096
+    },
+    {
+      "source": 1,
+      "country": "India",
+      "records": 809986,
+      "missing_names": 0,
+      "missing_addresses": 0,
+      "mean_name_length": 27.556396036474705,
+      "mean_address_length": 72.5929213591346
+    },
+    {
+      "source": 1,
+      "country": "US",
+      "records": 663106,
+      "missing_names": 0,
+      "missing_addresses": 0,
+      "mean_name_length": 24.03885804079589,
+      "mean_address_length": 32.906953036166165
+    },
+    {
+      "source": 2,
+      "country": "France",
+      "records": 703378,
+      "missing_names": 0,
+      "missing_addresses": 21537,
+      "mean_name_length": 20.857213333371245,
+      "mean_address_length": 37.71006485844027
+    },
+    {
+      "source": 2,
+      "country": "India",
+      "records": 2312565,
+      "missing_names": 0,
+      "missing_addresses": 52764,
+      "mean_name_length": 29.653919781714244,
+      "mean_address_length": 64.47975040701559
+    },
+    {
+      "source": 2,
+      "country": "US",
+      "records": 1871330,
+      "missing_names": 0,
+      "missing_addresses": 55107,
+      "mean_name_length": 25.535293614701843,
+      "mean_address_length": 30.284142294517803
+    },
+    {
+      "source": 3,
+      "country": "France",
+      "records": 731615,
+      "missing_names": 0,
+      "missing_addresses": 21541,
+      "mean_name_length": 20.905875357940992,
+      "mean_address_length": 38.119910061986154
+    },
+    {
+      "source": 3,
+      "country": "India",
+      "records": 2405000,
+      "missing_names": 0,
+      "missing_addresses": 59240,
+      "mean_name_length": 29.00575717255717,
+      "mean_address_length": 55.43572390852391
+    },
+    {
+      "source": 3,
+      "country": "US",
+      "records": 1945701,
+      "missing_names": 0,
+      "missing_addresses": 55317,
+      "mean_name_length": 25.83942959375567,
+      "mean_address_length": 37.10848429434944
+    }
+  ]
+}

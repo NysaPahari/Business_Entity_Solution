@@ -1,0 +1,120 @@
+{
+  "cohort": "audit",
+  "segments": [
+    {
+      "dimension": "all",
+      "segment": "all",
+      "entities": 3000,
+      "fp": 194,
+      "fn": 1151,
+      "tp": 9189,
+      "blocked_fn": 556,
+      "macro_f05": 0.9454798696591747
+    },
+    {
+      "dimension": "candidate_count",
+      "segment": "many",
+      "entities": 3000,
+      "fp": 194,
+      "fn": 1151,
+      "tp": 9189,
+      "blocked_fn": 556,
+      "macro_f05": 0.9454798696591747
+    },
+    {
+      "dimension": "country",
+      "segment": "India",
+      "entities": 1227,
+      "fp": 94,
+      "fn": 625,
+      "tp": 3623,
+      "blocked_fn": 381,
+      "macro_f05": 0.921120448277915
+    },
+    {
+      "dimension": "country",
+      "segment": "US",
+      "entities": 1773,
+      "fp": 100,
+      "fn": 526,
+      "tp": 5566,
+      "blocked_fn": 175,
+      "macro_f05": 0.9623377433392613
+    },
+    {
+      "dimension": "cross",
+      "segment": "India|many|real_match",
+      "entities": 1162,
+      "fp": 89,
+      "fn": 625,
+      "tp": 3623,
+      "blocked_fn": 381,
+      "macro_f05": 0.9210110069165245
+    },
+    {
+      "dimension": "cross",
+      "segment": "India|many|singleton",
+      "entities": 65,
+      "fp": 5,
+      "fn": 0,
+      "tp": 0,
+      "blocked_fn": 0,
+      "macro_f05": 0.9230769230769231
+    },
+    {
+      "dimension": "cross",
+      "segment": "US|many|real_match",
+      "entities": 1660,
+      "fp": 94,
+      "fn": 526,
+      "tp": 5566,
+      "blocked_fn": 175,
+      "macro_f05": 0.9627860355063316
+    },
+    {
+      "dimension": "cross",
+      "segment": "US|many|singleton",
+      "entities": 113,
+      "fp": 6,
+      "fn": 0,
+      "tp": 0,
+      "blocked_fn": 0,
+      "macro_f05": 0.9557522123893806
+    },
+    {
+      "dimension": "truth_type",
+      "segment": "real_match",
+      "entities": 2822,
+      "fp": 183,
+      "fn": 1151,
+      "tp": 9189,
+      "blocked_fn": 556,
+      "macro_f05": 0.945584553145827
+    },
+    {
+      "dimension": "truth_type",
+      "segment": "singleton",
+      "entities": 178,
+      "fp": 11,
+      "fn": 0,
+      "tp": 0,
+      "blocked_fn": 0,
+      "macro_f05": 0.9438202247191011
+    }
+  ],
+  "blocking": {
+    "true_pairs": 10340,
+    "recovered_pairs": 9784,
+    "pair_recall": 0.9462282398452612,
+    "oracle_macro_f05": 0.9803222528482364,
+    "mean_candidates": 127.981
+  },
+  "blocking_bottleneck": true,
+  "macro_f05_bootstrap_95_interval": [
+    0.9404478772057338,
+    0.9502167686649116
+  ],
+  "selected_stage": "composite_k64_enhanced_more_training_rescore_k128",
+  "threshold": 0.6424946130359818,
+  "protocol": "New hash-bucket-1 entities, disjoint from training and all previous selected audit IDs. Model, features, retrieval and threshold frozen before scoring. No subsequent selection on this result."
+}

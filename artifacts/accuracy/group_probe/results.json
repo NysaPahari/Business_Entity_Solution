@@ -1,0 +1,32 @@
+{
+  "protocol": "1000 previously unused training-bucket entities excluded from base-model training; 1000 existing calibration entities split by calibration_role. Residual models trained only on train. Cutoffs fit on calibration fit half, comparisons on tune half. No fresh audit or deployment.",
+  "config": {
+    "model_sha256": "1f7c5b23cd4d5b62e5e2fbbb0912ec9feadaad04d9807333c70fb03128dc5e87",
+    "training_entities": 1000,
+    "calibration_entities": 1000,
+    "version": 1
+  },
+  "results": {
+    "selected_frozen": {
+      "tune_entities": 500,
+      "macro_f05": 0.9463226918818416,
+      "fp": 32,
+      "fn": 185,
+      "cutoff": 0.6424946130359818
+    },
+    "residual_pair_only": {
+      "tune_entities": 500,
+      "macro_f05": 0.9428631357133634,
+      "fp": 27,
+      "fn": 200,
+      "cutoff": 0.7173423751098243
+    },
+    "residual_group": {
+      "tune_entities": 500,
+      "macro_f05": 0.9412073467536192,
+      "fp": 21,
+      "fn": 224,
+      "cutoff": 0.8251790286103519
+    }
+  }
+}

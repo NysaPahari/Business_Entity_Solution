@@ -1,0 +1,6 @@
+{
+  "strategy": "composite",
+  "max_df": 4096,
+  "pool_size": 128,
+  "top_k": 128
+}

@@ -1,0 +1,32 @@
+{
+  "protocol": "Same 300 calibration queries. Up to three predicted anchors at >=0.98; one expansion hop; no transitive acceptance, no retraining or audit access.",
+  "config": {
+    "model_sha256": "1f7c5b23cd4d5b62e5e2fbbb0912ec9feadaad04d9807333c70fb03128dc5e87",
+    "anchor_threshold": 0.98,
+    "max_anchors": 3,
+    "expansion_k": 128
+  },
+  "anchors": 645,
+  "results": {
+    "baseline128": {
+      "recall": 0.9420018709073901,
+      "recovered_true_pairs": 1007,
+      "true_pairs": 1069,
+      "mean_candidates": 128.0,
+      "oracle_macro_f05": 0.9777855512959878,
+      "frozen_model_macro_f05": 0.9331401946247556,
+      "false_positives": 25,
+      "false_negatives": 123
+    },
+    "graph_expanded": {
+      "recall": 0.9560336763330215,
+      "recovered_true_pairs": 1022,
+      "true_pairs": 1069,
+      "mean_candidates": 169.51,
+      "oracle_macro_f05": 0.9813166684762984,
+      "frozen_model_macro_f05": 0.9340094642440253,
+      "false_positives": 25,
+      "false_negatives": 120
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "model_sha256": "1f7c5b23cd4d5b62e5e2fbbb0912ec9feadaad04d9807333c70fb03128dc5e87",
+  "calibration_entities": 3000,
+  "candidate_pairs": 383962,
+  "protocol": "Cutoffs fit on calibration fit half; alternatives compared on calibration tune half. No audit access. No production promotion.",
+  "experiments": [
+    {
+      "weight": 0.0,
+      "cutoff": 0.6424946130359818,
+      "fit_macro_f05": 0.9412475602820659,
+      "tune_macro_f05": 0.950000063359238,
+      "delta_vs_selected": 0.0,
+      "improved_entities": 0,
+      "worsened_entities": 0
+    },
+    {
+      "weight": 0.1,
+      "cutoff": 0.5854605162082311,
+      "fit_macro_f05": 0.9414045467996043,
+      "tune_macro_f05": 0.9496297872795253,
+      "delta_vs_selected": -0.0003702760797129778,
+      "improved_entities": 11,
+      "worsened_entities": 25
+    },
+    {
+      "weight": 0.25,
+      "cutoff": 0.4281099301216933,
+      "fit_macro_f05": 0.941402092950745,
+      "tune_macro_f05": 0.9500989396952805,
+      "delta_vs_selected": 9.887633604242099e-05,
+      "improved_entities": 9,
+      "worsened_entities": 20
+    },
+    {
+      "weight": 0.5,
+      "cutoff": 0.2837195802286067,
+      "fit_macro_f05": 0.9403229523061017,
+      "tune_macro_f05": 0.9485318253763065,
+      "delta_vs_selected": -0.001468237982931613,
+      "improved_entities": 33,
+      "worsened_entities": 93
+    }
+  ]
+}

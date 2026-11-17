@@ -1,0 +1,12 @@
+{
+  "seed": 2026,
+  "train_size": 12000,
+  "tune_size": 3000,
+  "audit_size": 3000,
+  "max_df": 128,
+  "pool_size": 32,
+  "top_k": 20,
+  "memory": "2GB",
+  "threads": 2,
+  "workers": 3
+}

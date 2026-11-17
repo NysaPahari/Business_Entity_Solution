@@ -2,6 +2,8 @@
 
 **Amazon ML Challenge 2026 · Team EEE_2027_ML · BITS Pilani, Hyderabad Campus**
 
+Tanishi Sinha (team lead), Palak Agarwal, Nysa Pahari, and Roshni Dhar
+
 We built a record-linkage pipeline that identifies the same business across three independent sources. The selected model scored **0.94548 macro F₀.₅** on a fresh local audit of 3,000 businesses. On the original audit cohort, the project improved from **0.87115 to 0.93874**, a gain of **6.76 percentage points**. The pipeline generated validated output for all **1,732,544** Source 1 test businesses.
 
 ## Problem statement
@@ -53,3 +55,40 @@ The **0.99 project target remains unmet**. The candidate oracle shows that perfe
 | Entities with an empty predicted list | 107,879 |
 
 The project exports `matching_results.tsv` and `candidate_pairs.tsv`. Both passed checks for complete Source 1 coverage, valid target IDs, duplicate-free lists, TSV formatting, and inclusion of each predicted match in its candidate list. The submission package includes the fitted model, Python source, pinned dependencies, and reproduction instructions. The pipeline uses the supplied records throughout, with no external business lookups.
+
+## Run the repository
+
+Use 64-bit Python 3.12 and run these commands from the repository root.
+
+~~~sh
+python -m venv .venv
+~~~
+
+Activate the environment with `.venv\Scripts\Activate.ps1` in PowerShell or `source .venv/bin/activate` on macOS/Linux, then install dependencies and run the tests.
+
+~~~sh
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+~~~
+
+The tests use synthetic fixtures and run without the competition dataset. For full inference, place the original challenge files in `dataset/test/` and `dataset/train/` with the names given in the [data format](PROBLEM_STATEMENT.md). The normalization command processes all six source files, and prediction with the included model uses the three normalized test files.
+
+~~~sh
+python -m src.normalize
+python -m src.pipeline --stage predict --artifact-dir artifacts/accuracy/selected --work-dir work_accuracy_test --output-dir output_improved --blocking-strategy composite --max-df 4096 --pool-size 128 --top-k 128 --memory 4GB --threads 1 --retrieval-batch-size 2000 --workers 1
+python -m src.finalize_improved
+~~~
+
+For the competition ZIP, run `python -m src.package_improved` after finalization. Full inference takes substantial time and disk space. An interrupted run can resume from the same work directory with the same inputs and configuration.
+
+## Repository guide
+
+| Path | Contents |
+| --- | --- |
+| [src/](src/) | Normalization, blocking, features, model training, inference, experiments, and packaging |
+| [tests/](tests/) and [utils/](utils/) | Unit tests, end-to-end fixture tests, and submission validation |
+| [artifacts/accuracy/selected/](artifacts/accuracy/selected/) | Fitted classifier and TF-IDF, inference settings, and validation metrics |
+| [Accuracy report](artifacts/accuracy/ACCURACY_REPORT.md) and [audit results](artifacts/accuracy/fresh_audit.json) | Model selection and measured performance |
+| [Methodology](Documentation_improved.md), [normalization](NORMALIZATION.md), and [baseline](BASELINE.md) | Implementation details and reproduction notes |
+
+The original challenge data, normalized datasets, generated prediction TSVs, work databases, and virtual environments live outside Git. Full inference regenerates the prediction files under `output_improved/`.

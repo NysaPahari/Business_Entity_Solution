@@ -1,0 +1,34 @@
+{
+  "protocol": "From-scratch byte cross-encoder residual. 1000 unused training entities; hard plus weighted random negatives. Three epochs/cutoff selected on calibration fit half, final comparison on tune half. No external weights/data, audit access, or promotion.",
+  "epochs": [
+    {
+      "epoch": 1,
+      "fit_macro_f05": 0.9436313722390304,
+      "cutoff": 0.8685817596818625
+    },
+    {
+      "epoch": 2,
+      "fit_macro_f05": 0.9435361341437922,
+      "cutoff": 0.8633000621961227
+    },
+    {
+      "epoch": 3,
+      "fit_macro_f05": 0.9440428173240805,
+      "cutoff": 0.7167645025229371
+    }
+  ],
+  "parameters": 69137,
+  "selected_cutoff": 0.7167645025229371,
+  "baseline": {
+    "entities": 500,
+    "macro_f05": 0.9463226918818416,
+    "fp": 32,
+    "fn": 185
+  },
+  "neural": {
+    "entities": 500,
+    "macro_f05": 0.9432432309341837,
+    "fp": 25,
+    "fn": 203
+  }
+}
